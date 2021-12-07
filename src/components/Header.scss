@@ -1,0 +1,63 @@
+.header {
+    margin: 0;
+  
+    .header_content {
+      width: 95%;
+      margin: 0 auto;
+  
+      @media (min-width: 50em) {
+          // For wider screens
+        width: 80%;
+      }
+      div.details {
+        display: flex;
+        flex-direction: row;
+        padding: 4px 0;
+        align-items: center;
+        justify-content: space-between;
+  
+        div.left {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .avsi_header_img {
+            height: 2em;
+          }
+  
+          h1 {
+            margin: 0 0 0 1em;
+            color: rgba(11, 114, 181, 1);
+            font-size: 1.25rem;
+            font-weight: normal;
+          }
+        }
+  
+        div.right {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+  
+          p.fullName {
+              margin-right: 8px;
+              text-transform: uppercase;
+          }
+  
+          button.auth {
+            background-color: orange;
+            padding: 2px 8px;
+            border: 1px solid darkorchid;
+            border-radius: 2px;
+            cursor: pointer;
+            color: darkslateblue;
+  
+            &:hover {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // basic-value usd 
+  // col: basic invoice value usd. left hs of conversion domestic fcy (cg)

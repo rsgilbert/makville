@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: calc(.6em + 1vw);
+}
+
+
+
+@media(min-width: 50em) {
+    :root {
+        font-size: 1em;
+    }
+}
